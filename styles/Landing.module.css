@@ -1,8 +1,5 @@
 .sidebar{
     background-color: #26496e;
-    /* overflow: auto; */
-    /* position: -webkit-sticky;
-    position: sticky; */
     position: fixed;
     top: 0;
     bottom: 0;
@@ -34,33 +31,6 @@
     color: white;
 }
 
-.counterBox1{
-    background-color: #f87171;
-}
-
-.counterBox2 {
-    background-color: #3b82f6;
-}
-
-.counterBox3 {
-    background-color: #22c55e;
-}
-
-.textorange{
-    color: #f87171;
-}
-
-.textblue{
-    color: #3b82f6;
-}
-
-.textgreen{
-    color: #22c55e;
-}
-
-.percentLoad{
-    width: 10rem;
-}
 
 @media only screen and (max-width: 600px){
     .sidebarVisible{

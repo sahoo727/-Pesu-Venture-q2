@@ -2,16 +2,16 @@ import React from 'react';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { Dashboard} from '@mui/icons-material';
-import StyleIcon from '@mui/icons-material/Style';
-import ViewWeekIcon from '@mui/icons-material/ViewWeek';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+
+import MoreTimeIcon from '@mui/icons-material/MoreTime';
+import PersonIcon from '@mui/icons-material/Person';
+import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
+import AddModeratorIcon from '@mui/icons-material/AddModerator';
+import SchoolIcon from '@mui/icons-material/School';
+import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
 import BatchPredictionIcon from '@mui/icons-material/BatchPrediction';
 import ContentPasteSearchIcon from '@mui/icons-material/ContentPasteSearch';
-import EqualizerIcon from '@mui/icons-material/Equalizer';
-import AcUnitIcon from '@mui/icons-material/AcUnit';
-import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
-import AssessmentIcon from '@mui/icons-material/Assessment';
+import BookIcon from '@mui/icons-material/Book';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 
@@ -22,102 +22,133 @@ function Sidebar({onClose}) {
     <div className='mx-5 my-3' style={{position:"sticky"}}>
         <div>
             <button className='vibile md:hidden text-white' onClick={onClose}><CloseOutlinedIcon /></button>
-            <h6 className='mt-5 text-white'>Reports</h6>
-            <div className={`${styles.list}`}>
-                <ListItemButton className={`${styles.listButton}`}>
+            
+            <div className='text-center'>
                 <ListItemIcon>
-                    <Dashboard className={`${styles.iconDashboard}`}/>
+                    <PersonIcon className='text-blue-300 font-bold'/>
+                    <p className='text-blue-300 font-bold mx-2'>Admin Panel</p>
                 </ListItemIcon>
-                <ListItemText primary="Dashboard" />
-                </ListItemButton>
             </div>
+
             <div className={`${styles.list}`}>
                 <ListItemButton className={`${styles.listButton}`}>
                 <ListItemIcon>
-                    <StyleIcon className={`${styles.iconDashboard}`}/>
+                    <MoreTimeIcon className={`${styles.iconDashboard}`}/>
                 </ListItemIcon>
-                <ListItemText primary="Department" />
-                </ListItemButton>
-            </div>
-            <div className={`${styles.list}`}>
-                <ListItemButton className={`${styles.listButton}`}>
-                <ListItemIcon>
-                    <ViewWeekIcon className={`${styles.iconDashboard}`}/>
-                </ListItemIcon>
-                <ListItemText primary="Skillwise Data" />
-                </ListItemButton>
-            </div>
-            <div className={`${styles.list}`}>
-                <ListItemButton className={`${styles.listButton}`}>
-                <ListItemIcon>
-                    <CalendarMonthIcon className={`${styles.iconDashboard}`}/>
-                </ListItemIcon>
-                <ListItemText primary="View Schedule" />
+                <ListItemText primary="Manage Categories" />
                 </ListItemButton>
             </div>
 
-            <h6 className='mt-5 text-white'>Accesories</h6>
             <div className={`${styles.list}`}>
                 <ListItemButton className={`${styles.listButton}`}>
                 <ListItemIcon>
-                    <BatchPredictionIcon className={`${styles.iconDashboard}`}/>
+                    <PersonAddAlt1Icon className={`${styles.iconDashboard}`}/>
                 </ListItemIcon>
-                <ListItemText primary="Explore Skills" />
+                <ListItemText primary="Add Company" />
                 </ListItemButton>
             </div>
+
+            <div className={`${styles.list}`}>
+                <ListItemButton className={`${styles.listButton}`}>
+                <ListItemIcon>
+                    <PersonAddAlt1Icon className={`${styles.iconDashboard}`}/>
+                </ListItemIcon>
+                <ListItemText primary="Add New User" />
+                </ListItemButton>
+            </div>
+
+            <div className={`${styles.list}`}>
+                <ListItemButton className={`${styles.listButton}`}>
+                <ListItemIcon>
+                    <AddModeratorIcon className={`${styles.iconDashboard}`}/>
+                </ListItemIcon>
+                <ListItemText primary="Add New Certificates" />
+                </ListItemButton>
+            </div>
+
+            <div className={`${styles.list}`}>
+                <ListItemButton className={`${styles.listButton}`}>
+                <ListItemIcon>
+                    <SchoolIcon className={`${styles.iconDashboard}`}/>
+                </ListItemIcon>
+                <ListItemText primary="University action" />
+                </ListItemButton>
+            </div>
+
+            <div className={`${styles.list}`}>
+                <ListItemButton className={`${styles.listButton}`}>
+                <ListItemIcon>
+                    <PersonAddAlt1Icon className={`${styles.iconDashboard}`}/>
+                </ListItemIcon>
+                <ListItemText primary="Add students" />
+                </ListItemButton>
+            </div>
+
             <div className={`${styles.list}`}>
                 <ListItemButton className={`${styles.listButton}`}>
                 <ListItemIcon>
                     <ContentPasteSearchIcon className={`${styles.iconDashboard}`}/>
                 </ListItemIcon>
-                <ListItemText primary="Placement Test" />
-                </ListItemButton>
-            </div>
-            <div className={`${styles.list}`}>
-                <ListItemButton className={`${styles.listButton}`}>
-                <ListItemIcon>
-                    <EqualizerIcon className={`${styles.iconDashboard}`}/>
-                </ListItemIcon>
-                <ListItemText primary="Pre assesments" />
+                <ListItemText primary="Add MCQ" />
                 </ListItemButton>
             </div>
 
-            <h6 className='mt-5 text-white'>Organization</h6>
             <div className={`${styles.list}`}>
                 <ListItemButton className={`${styles.listButton}`}>
                 <ListItemIcon>
-                    <AcUnitIcon className={`${styles.iconDashboard}`}/>
+                    <BatchPredictionIcon className={`${styles.iconDashboard}`}/>
                 </ListItemIcon>
-                <ListItemText primary="Assign Skills" />
+                <ListItemText primary="Jobs" />
+                </ListItemButton>
+            </div>
+
+            <div className={`${styles.list}`}>
+                <ListItemButton className={`${styles.listButton}`}>
+                <ListItemIcon>
+                    <SchoolIcon className={`${styles.iconDashboard}`}/>
+                </ListItemIcon>
+                <ListItemText primary="Universities" />
                 </ListItemButton>
             </div>
             <div className={`${styles.list}`}>
                 <ListItemButton className={`${styles.listButton}`}>
                 <ListItemIcon>
-                    <ManageAccountsIcon className={`${styles.iconDashboard}`}/>
+                    <SupervisedUserCircleIcon className={`${styles.iconDashboard}`}/>
                 </ListItemIcon>
-                <ListItemText primary="Manage Students" />
+                <ListItemText primary="View all Users" />
                 </ListItemButton>
             </div>
+
             <div className={`${styles.list}`}>
                 <ListItemButton className={`${styles.listButton}`}>
                 <ListItemIcon>
-                    <AssessmentIcon className={`${styles.iconDashboard}`}/>
+                    <AccountCircleIcon className={`${styles.iconDashboard}`}/>
                 </ListItemIcon>
-                <ListItemText primary="Reports" />
+                <ListItemText primary="Trail Users" />
+                </ListItemButton>
+            </div>
+
+            <div className={`${styles.list}`}>
+                <ListItemButton className={`${styles.listButton}`}>
+                <ListItemIcon>
+                    <BookIcon className={`${styles.iconDashboard}`}/>
+                </ListItemIcon>
+                <ListItemText primary="Add Blogs" />
                 </ListItemButton>
             </div>
             
         </div>
 
         <div className='my-10'>
+            <ListItemButton>
             <ListItemIcon>
                 <AccountCircleIcon className={`${styles.iconDashboard}`} style={{fontSize:"3rem"}}/>
                 <div className='text-white px-3 pt-1'>
-                    <h5 className='font-bold'>College Admin</h5>
-                    <p className='text-xs'>College Admin</p>
+                    <h5 className='font-bold'>Anil J</h5>
+                    <p className='text-xs'>Assert_Admin</p>
                 </div>
             </ListItemIcon>
+            </ListItemButton>
         </div>
     </div>
   )
