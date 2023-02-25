@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, download zip file or clone using
 
 ```bash
-git clone https://github.com/sahoo727/Pesu-Venture-q1.git
+git clone https://github.com/sahoo727/-Pesu-Venture-q2.git
 
 ```
 
